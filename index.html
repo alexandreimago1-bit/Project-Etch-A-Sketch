@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchPad</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
-    <title>Sketch Pad</title>
 </head>
 <body>
-    <div class="flex-container">
-        <div class="title"><h1>SketchPad</h1></div>
-        <button id="btn">New Grid</button>
-        <div class="grid"></div>
+
+    <h1>SketchPad</h1>
+
+    <div id="gridContainer" class="gridContainer"></div>
+
+    
+        
+        <div class="control-group">
+            <button id="sizeKnob" class="knob-btn">Size</button>
+            <input type="range" id="sizeSlider" class="hidden-slider" min="2" max="64" value="16">
+            <span id="sizeValue">16</span>
+
+        <button id="newGridBtn" class="knob-btn">New Grid</button>
+
+        <button id="resetBtn" class="knob-btn">Reset</button>
     </div>
+
+    <script src="Etch.js"></script>
 </body>
 </html>

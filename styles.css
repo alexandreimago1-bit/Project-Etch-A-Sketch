@@ -1,0 +1,65 @@
+body {
+  background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    color: #E0E0E0;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.flex-container{
+  background-color: #e74c3c;
+  padding: 40px;
+  border-radius: 20px;
+  border: 8px solid #c0392b;
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.3);
+  text-align: center;
+}
+#sizeValue{
+   color: white;
+   
+}
+#gridContainer {
+  width: 400px; 
+  height: 400px; 
+  background-color: #fdfbf7;
+  border: 10px solid #bdc3c7;
+  margin: 20px 0;
+  display: grid;
+
+  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2);
+}
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  width: 400px; 
+  margin: 0 auto; 
+}
+
+
+.knob-btn {
+  background-color: #34495e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cell {
+    background-color: #dadada; 
+    border: 0.1px solid #6b6b6b;  
+}
+
+.cell.active {
+    background-color: #000000; 
+}
