@@ -28,14 +28,12 @@ h1 {
    
 }
 #gridContainer {
-  width: 400px; 
-  height: 400px; 
-  background-color: #fdfbf7;
-  border: 10px solid #bdc3c7;
-  margin: 20px 0;
-  display: grid;
-
-  box-shadow: inset 5px 5px 15px rgba(0,0,0,0.2);
+display: flex;
+    flex-wrap: wrap;
+    width: 400px; /* Keep the container size fixed */
+    height: 400px;
+    border: 10px solid #ffffff;
+    margin: 20px 0;
 }
 .control-panel {
   display: flex;
@@ -56,10 +54,10 @@ h1 {
 }
 
 .cell {
-    background-color: #dadada; 
-    border: 0.1px solid #6b6b6b;  
+    box-sizing: border-box; 
+    border: 0.1px solid #eee; 
 }
 
-.cell.active {
-    background-color: #000000; 
-}
+/* .cell.active {
+    background-color: #f9f8f8; 
+} */
